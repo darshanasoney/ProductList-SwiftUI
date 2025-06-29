@@ -55,6 +55,7 @@ struct ProductListView: View {
                                     .foregroundColor(.white)
                                     .padding(4)
                                     .background(Color.red)
+                                    .clipShape(Circle())
                             }
                         }
                     }

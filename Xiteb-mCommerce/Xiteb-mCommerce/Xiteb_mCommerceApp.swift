@@ -15,9 +15,9 @@ struct Xiteb_mCommerceApp: App {
     var body: some Scene {
         WindowGroup {
             //MARK: Use Mock Product Service in case of API not working
-            ProductListView(viewModel: ProductListViewModel(service: MockProductService())).environmentObject(cartManager)
+//            ProductListView(viewModel: ProductListViewModel(service: MockProductService())).environmentObject(cartManager)
             
-//            ProductListView(viewModel: ProductListViewModel(service: ProductService())).environmentObject(cartManager)
+            ProductListView(viewModel: ProductListViewModel(service: ProductService())).environmentObject(cartManager)
         }
     }
 }
